@@ -1,0 +1,4 @@
+﻿/*  Base  */
+"template_txt_storage_is_null" = "Error - {0} of {1} is null in {2}";
+"app_android_default_notification_channel_name" = "Floxis notifications";
+"app_android_default_notification_channel_description" = "Floxis appear in this channel";

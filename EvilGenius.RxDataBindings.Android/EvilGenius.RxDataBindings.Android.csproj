@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3034709-4BAF-4F05-830E-B1F5CB05B580}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EvilGenius.RxDataBindings.Android</RootNamespace>
+    <AssemblyName>EvilGenius.RxDataBindings.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\EvilGenius.RxDataBindings\LibTag.cs">
+      <Link>LibTag.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Utils\ExceptionExtensions.cs">
+      <Link>Utils\ExceptionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="AndroidPropertyProxyExtensions.cs" />
+    <Compile Include="BindingExtensions.cs" />
+    <Compile Include="Core\UtilsUI.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TargetProxies\AdapterViewSelectedItemPositionTargetProxy.cs" />
+    <Compile Include="TargetProxies\BaseImageViewTargetProxy.cs" />
+    <Compile Include="TargetProxies\BaseStreamImageViewTargetProxy.cs" />
+    <Compile Include="TargetProxies\Base\CommandAndroidTargetProxy.cs" />
+    <Compile Include="TargetProxies\Base\ValueAcceptorProviderAndroidTargetProxy.cs" />
+    <Compile Include="TargetProxies\Base\ValueAcceptorAndroidTargetProxy.cs" />
+    <Compile Include="TargetProxies\CompoundButtonCheckedTargetProxy.cs" />
+    <Compile Include="TargetProxies\EditTextPreferenceTextTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewBitmapTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewDrawableBaseTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewDrawableNameTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewDrawableTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewImageDrawableTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewImageTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewResourceNameTargetProxy.cs" />
+    <Compile Include="TargetProxies\ImageViewTargetProxy.cs" />
+    <Compile Include="TargetProxies\NumberPickerDisplayedValuesTargetProxy.cs" />
+    <Compile Include="TargetProxies\NumberPickerValueTargetProxy.cs" />
+    <Compile Include="TargetProxies\ToolbarSubtitleProxy.cs" />
+    <Compile Include="TargetProxies\TwoStatePreferenceCheckedTargetProxy.cs" />
+    <Compile Include="TargetProxies\ListPreferenceTargetProxy.cs" />
+    <Compile Include="TargetProxies\PreferenceValueBaseTargetProxy.cs" />
+    <Compile Include="TargetProxies\PreferenceValueTargetProxy.cs" />
+    <Compile Include="TargetProxies\RatingBarRatingTargetProxy.cs" />
+    <Compile Include="TargetProxies\SearchViewQueryTextTargetProxy.cs" />
+    <Compile Include="TargetProxies\SeekBarProgressTargetProxy.cs" />
+    <Compile Include="TargetProxies\TextViewFocusTargetProxy.cs" />
+    <Compile Include="TargetProxies\TextViewTextFormattedTargetProxy.cs" />
+    <Compile Include="TargetProxies\TextViewTextTargetProxy.cs" />
+    <Compile Include="TargetProxies\VideoViewUriTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewClickTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewFocusChangedTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewHiddenTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewLongClickTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewMarginTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewPaddingTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewVisibilityTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewVisibleTargetProxy.cs" />
+    <Compile Include="TargetProxies\ViewVisibilityBaseTargetProxy.cs" />
+    <Compile Include="TargetProxies\WebViewHtmlTargetProxy.cs" />
+    <Compile Include="Utils\Logger.cs" />
+    <Compile Include="TargetProxies\WebViewUriTargetProxy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="OneOf">
+      <Version>3.0.190</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\EvilGenius.RxDataBindings\EvilGenius.RxDataBindings.csproj">
+      <Project>{8e7055fd-7c7b-4fa4-9df6-60f877a83665}</Project>
+      <Name>EvilGenius.RxDataBindings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\Shared\SharedCodeItems.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

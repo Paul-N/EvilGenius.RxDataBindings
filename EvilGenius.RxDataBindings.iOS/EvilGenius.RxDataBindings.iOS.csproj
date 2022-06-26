@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEE8E8A5-7FC3-4A20-966E-718161A692EB}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{a52b8a63-bc84-4b47-910d-692533484892}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EvilGenius.RxDataBindings.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>EvilGenius.RxDataBindings.iOS</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\EvilGenius.RxDataBindings\LibTag.cs">
+      <Link>LibTag.cs</Link>
+    </Compile>
+    <Compile Include="Platform_iOSPropertyProxyExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TargetProxies\BaseUIDatePickerTargetProxy.cs" />
+    <Compile Include="TargetProxies\BaseUIViewVisibilityTargetProxy.cs" />
+    <Compile Include="TargetProxies\Base\Command_iOSTargetProxy.cs" />
+    <Compile Include="TargetProxies\Base\ValueAcceptorProvider_iOSTargetProxy.cs" />
+    <Compile Include="TargetProxies\Base\ValueAcceptor_iOSTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIActivityIndicatorViewHiddenTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIBarButtonItemTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIButtonTitleTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIControlTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIDatePickerCountDownDurationTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIDatePickerDateTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIDatePickerMinMaxTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIDatePickerTimeTargetProxy.cs" />
+    <Compile Include="TargetProxies\UILabelTextTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIPageControlCurrentPageTargetProxy.cs" />
+    <Compile Include="TargetProxies\UISearchBarTextTargetProxy.cs" />
+    <Compile Include="TargetProxies\UISegmentedControlSelectedSegmentTargetProxy.cs" />
+    <Compile Include="TargetProxies\UISliderValueTargetProxy.cs" />
+    <Compile Include="TargetProxies\UISwitchOnTargetProxy.cs" />
+    <Compile Include="TargetProxies\UITextFieldShouldReturnTargetProxy.cs" />
+    <Compile Include="TargetProxies\UITextFieldTextFocusTargetProxy.cs" />
+    <Compile Include="TargetProxies\UITextFieldTextTargetProxy.cs" />
+    <Compile Include="TargetProxies\UITextViewTextTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIViewHiddenTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIViewLayerBorderWidthTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIViewTapTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIViewVisibilityTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIViewVisibleTargetProxy.cs" />
+    <Compile Include="TargetProxies\UIStepperValueTargetProxy.cs" />
+    <Compile Include="BindingExtensions.cs" />
+    <Compile Include="Utils\Logger.cs" />
+    <Compile Include="Utils\DateTimeExtensions.cs" />
+    <Compile Include="Views\UIControlEvent.cs" />
+    <Compile Include="Views\GestureRecognizerBehavior.cs" />
+    <Compile Include="Views\TapGestureRecognizerBehaviour.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EvilGenius.RxDataBindings\EvilGenius.RxDataBindings.csproj">
+      <Project>{8e7055fd-7c7b-4fa4-9df6-60f877a83665}</Project>
+      <Name>EvilGenius.RxDataBindings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Reactive">
+      <Version>5.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Base.lproj\Localizable.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\Shared\SharedCodeItems.targets" />
+</Project>

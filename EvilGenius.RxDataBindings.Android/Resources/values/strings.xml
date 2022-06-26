@@ -1,0 +1,6 @@
+<resources>
+  <string name="template_val_isnt_drawable">Value \'{0}\' was not a known drawable name</string>
+  <string name="msg_empty_val_in_img_view_src">Empty value passed to ImageView proxy</string>
+  <string name="msg_generic_preference_trg">AcceptValue called on generic Preference target</string>
+  <string name="msg_unknown_visiblity">Unknown kind of visiblity</string>
+</resources>

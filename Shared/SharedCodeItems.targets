@@ -1,0 +1,7 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Logging\LogLevel.cs" Link="Logging\LogLevel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logging\ILogger.cs" Link="Logging\ILogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logging\DebugLogger.cs" Link="Logging\DebugLogger.cs" />
+  </ItemGroup>
+</Project>
