@@ -1,7 +1,6 @@
-﻿namespace EvilGenius.RxDataBindings.Properties
+﻿namespace EvilGenius.RxDataBindings.Properties;
+
+public interface IPropertyRaiser
 {
-    public interface IPropertyRaiser
-    {
-        void Raise();
-    }
+    void Raise();
 }

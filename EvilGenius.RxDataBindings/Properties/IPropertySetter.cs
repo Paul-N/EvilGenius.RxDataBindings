@@ -1,8 +1,7 @@
-﻿namespace EvilGenius.RxDataBindings.Properties
+﻿namespace EvilGenius.RxDataBindings.Properties;
+
+public interface IPropertySetter<T> : IPropertyRaiser
 {
-    public interface IPropertySetter<T> : IPropertyRaiser
-    {
-        void SetValue(T value, bool isSilently = false);
-        void SetValueSilently(T value);
-    }
+    void SetValue(T value, bool isSilently = false);
+    void SetValueSilently(T value);
 }

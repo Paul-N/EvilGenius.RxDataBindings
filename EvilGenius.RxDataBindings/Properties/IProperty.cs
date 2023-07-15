@@ -1,9 +1,8 @@
 ﻿using System;
 
-namespace EvilGenius.RxDataBindings.Properties
+namespace EvilGenius.RxDataBindings.Properties;
+
+public interface IProperty<T> : IRxBaseProperty, IObservable<T>, IObserver<T>
 {
-    public interface IProperty<T> : IRxBaseProperty, IObservable<T>, IObserver<T>
-    {
-        T Value { get; set; }
-    }
+    T Value { get; set; }
 }

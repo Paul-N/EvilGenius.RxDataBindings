@@ -1,11 +1,10 @@
-﻿namespace EvilGenius.RxDataBindings.Bindings
+﻿namespace EvilGenius.RxDataBindings.Bindings;
+
+public enum BindingMode
 {
-    public enum BindingMode
-    {
-        Default = 0,
-        TwoWay,
-        OneWay,
-        FireCommand,
-        OneWayToSource
-    }
+    Default = 0,
+    TwoWay,
+    OneWay,
+    FireCommand,
+    OneWayToSource
 }

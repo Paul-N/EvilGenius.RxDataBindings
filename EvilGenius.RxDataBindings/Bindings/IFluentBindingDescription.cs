@@ -1,9 +1,8 @@
 ﻿using System;
 
-namespace EvilGenius.RxDataBindings.Bindings
+namespace EvilGenius.RxDataBindings.Bindings;
+
+public interface IFluentBindingDescription
 {
-    public interface IFluentBindingDescription
-    {
-        IDisposable Apply();
-    }
+    IDisposable Apply();
 }

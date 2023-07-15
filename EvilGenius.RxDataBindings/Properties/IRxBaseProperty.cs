@@ -1,4 +1,3 @@
-﻿namespace EvilGenius.RxDataBindings.Properties
-{
-    public interface IRxBaseProperty { }
-}
+﻿namespace EvilGenius.RxDataBindings.Properties;
+
+public interface IRxBaseProperty { }

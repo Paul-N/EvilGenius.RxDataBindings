@@ -1,8 +1,7 @@
 ﻿using System;
 
-namespace EvilGenius.RxDataBindings.Proxies
-{
-    public interface IPropertySetterProxy { }
+namespace EvilGenius.RxDataBindings.Proxies;
 
-    public interface IPropertySetterProxy<TProperty> : IPropertySetterProxy, IObserver<TProperty>{ }
-}
+public interface IPropertySetterProxy { }
+
+public interface IPropertySetterProxy<TProperty> : IPropertySetterProxy, IObserver<TProperty>{ }

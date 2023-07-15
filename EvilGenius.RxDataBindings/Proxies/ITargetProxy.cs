@@ -1,4 +1,3 @@
-﻿namespace EvilGenius.RxDataBindings.Proxies
-{
-    public interface ITargetProxy { }
-}
+﻿namespace EvilGenius.RxDataBindings.Proxies;
+
+public interface ITargetProxy { }

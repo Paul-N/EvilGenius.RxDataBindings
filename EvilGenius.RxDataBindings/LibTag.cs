@@ -1,7 +1,6 @@
-﻿namespace EvilGenius.RxDataBindings
+﻿namespace EvilGenius.RxDataBindings;
+
+internal static class LibTag
 {
-    internal static class LibTag
-    {
-        public static string Tag => "RxDataBindings";
-    }
+    public static string Tag => "RxDataBindings";
 }
